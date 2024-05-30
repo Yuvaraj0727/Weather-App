@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: peru;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+}
+
+.container{
+    width: 350px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inputcontainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 2px solid peru;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cityinput{
+    flex: 1;
+    padding: 10px;
+    height: 30px;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    outline:none;
+}
+
+.searchicon{
+    padding: 10px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.imgs{
+    text-align: center;
+    height: 150px;
+    margin: 20px 0; 
+    
+}
+
+.imgs img{
+    width: 160px;
+    height: 160px;
+}
+
+.temp,
+.location,
+.contry{
+    margin-top: 5px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(187, 42, 71);
+    text-align: center;
+}
+
+.temp{
+    font-weight: 900px;
+    margin-top:10px;
+}
+
+.location{
+    color:cadetblue;
+}
+
+.cord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cord div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cord div span{
+    font-size: 15px;
+}
+
+.humiditypercent,
+.cord div span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+    color:rgb(187, 42, 71);
+}
+
+.datacontainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.element{
+    text-align: center;
+}
+
+.text{
+    letter-spacing: 2px;
+    color: rgb(84, 79, 79);
+}
+
+.citynotfound,
+.loadingmsg,
+.errormsg{
+    margin: 10px;
+    color:brown;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
